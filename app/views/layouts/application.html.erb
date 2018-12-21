@@ -8,8 +8,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header class="row">
+      
+      <div class="col-10 links">
+        <%= link_to 'Destination', '#' %>
+        <%= link_to 'About', '#' %>
+      </div>
+  
+    </header>
+
     <%= yield %>
   </body>
 </html>
